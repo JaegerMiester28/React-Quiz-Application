@@ -1,8 +1,11 @@
 import React from 'react';
-
 import { createContext, useReducer } from 'react';
+import questions from '../data';
 
-const initialState = {};
+const initialState = {
+  questions,
+  currentQuestionIndex: 0,
+};
 
 const reducer = (state, action) => {
   return state;
